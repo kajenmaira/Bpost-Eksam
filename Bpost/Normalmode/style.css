@@ -1,0 +1,1019 @@
+/* --------- variabler ---------*/
+/* ----------  general stylerules ---------- */
+body {
+  font-family: "Exo 2", sans-serif;
+  color: #16273D;
+}
+
+a {
+  text-decoration: none;
+  color: #16273D;
+}
+
+/* ---------- Icon --------- */
+i {
+  color: #16273D;
+  top: 30px;
+  left: 30px;
+}
+
+/* ----------  Icon (back) ---------- */
+.fa-chevron-left {
+  position: fixed;
+}
+
+/*  ----------  Buttons  ---------- */
+button {
+  height: 60px;
+  width: 270px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-style: bold;
+  font-size: 1.6em;
+  border: none;
+  justify-self: center;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonhent {
+  background-color: #F02637;
+}
+
+.buttonsend {
+  background-color: #4195BA;
+}
+
+/* ----------  Pop-Ups ---------- */
+.popup {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 20px #a2a4a7;
+  width: 330px;
+}
+
+/*  ----------  hamburger menu ---------- */
+.navbarsection {
+  display: block;
+}
+
+.navbar {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 20px #a2a4a7;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  /* -300px: moving the menu out of the screen */
+  display: flex;
+  justify-content: center;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+}
+
+.change {
+  right: 0;
+  /* moving the menu into the screen */
+}
+
+.hamburger-menu {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #66A368;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+  background-color: #66A368;
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+  background-color: #66A368;
+}
+
+.nav-list {
+  text-align: left;
+  margin-top: 80px;
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.menuicon {
+  font-size: 1.3em;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #16273D;
+  font-weight: 500;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0;
+  display: grid;
+  justify-self: start;
+}
+
+.navlink__kundeservice {
+  margin-left: 16px;
+}
+
+.fa-phone-alt {
+  margin-left: 18px;
+}
+
+.nav-link:hover {
+  color: #16273D;
+}
+
+.icon {
+  width: 32px;
+}
+
+.darkmode {
+  width: 25px;
+}
+
+.logomenu {
+  max-width: 120px;
+  position: relative;
+  top: 25px;
+  left: 25%;
+}
+
+/* ---------- Loadingpage ---------- */
+.loadingpage {
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr 1fr;
+  text-align: center;
+  justify-items: center;
+}
+
+.heading__loadingpage {
+  margin-top: 140px;
+  font-size: 4em;
+}
+
+.logo__loadingpage {
+  width: 250px;
+}
+
+/* ---------- Home Page ---------- */
+.backgroundimg {
+  background-image: url(img/SwipBox-illustration-city.png);
+  background-size: cover;
+}
+
+.linkbox {
+  border-radius: 12px;
+  box-shadow: 3px 3px 20px #a2a4a7;
+  width: 330px;
+  height: 135px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__home {
+  display: grid;
+  grid-template-rows: 2.7fr 1fr 1fr;
+  justify-items: center;
+}
+
+.logo__home {
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.heading__home {
+  margin-top: 100px;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.img__home-hent {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.img__home-send {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/*  ------------- Guides ------------ */
+.guides_h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 70px;
+  margin-top: 7px;
+}
+
+.main__guides {
+  display: grid;
+}
+
+.button__guides {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.backgroundimg__guides {
+  background-image: url(img/SwipBox-illustration-city.png);
+  background-size: 100% 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.button__sendpakke-guide {
+  margin-bottom: 200px;
+}
+
+/* -------------- Hent pakke Guide ---------------*/
+/* general + button */
+.hentguide {
+  background-color: #FFA0A8;
+  background-image: url("../app/img/hentpakke-stort.png");
+  background-repeat: no-repeat;
+  background-position: 99% 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.img__hentpakke-stort {
+  position: fixed;
+  left: -220px;
+  z-index: -1;
+}
+
+.fa-chevron-right_guide {
+  width: 70px;
+  height: 70px;
+  background-color: #F02637;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+.fa-chevron-right.icon_guide {
+  margin-top: 0;
+  margin-right: 7px;
+  color: white;
+}
+
+.skip_guide {
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.fas.fa-circle.guide {
+  position: relative;
+  top: -4px;
+  left: 0;
+  margin-left: 8px;
+  color: white;
+}
+
+.fas.fa-circle.guide.guide--done {
+  position: relative;
+  left: 60px;
+  color: white;
+  opacity: 0.7;
+}
+
+.footer_guide {
+  margin-bottom: 30px;
+  margin-left: 17px;
+}
+
+/*text*/
+.introtext_guide {
+  color: #F02637;
+  font-size: 33px;
+  text-align: center;
+  margin: 0px 33px 0px;
+}
+
+.guidetext_step {
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-top: 0px;
+}
+
+.guidetext_info {
+  font-size: 23px;
+  text-align: center;
+  margin: 0px 50px 0px;
+}
+
+/* img + buttons to show */
+.img_hentpakke-touch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+}
+
+.step2 {
+  display: grid;
+  grid-template-rows: 2fr 0.1fr 0.1fr;
+  justify-items: center;
+}
+
+.fa-map-marker-alt.fa-8x {
+  margin-top: 130px;
+  margin-bottom: 70px;
+}
+
+.button__afhent_step3 {
+  margin-top: 165px;
+  margin-left: 40px;
+  background-color: #F02637;
+}
+
+.finger_touch_step3 {
+  margin-left: 230px;
+  margin-bottom: 35px;
+  position: relative;
+  top: -17px;
+}
+
+.button__afhent_step4 {
+  margin-top: 165px;
+  margin-left: 40px;
+  background-color: #F02637;
+}
+
+.finger_touch_step4 {
+  margin-left: 230px;
+  margin-bottom: 35px;
+  position: relative;
+  top: -17px;
+}
+
+.animation_tagpakke {
+  width: 300px;
+  place-self: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: -10px;
+}
+
+/* -------------- Send pakke Guide ---------------*/
+/* general + button */
+.sendguide {
+  background-color: #91D1DF;
+  background-image: url("../app/img/sendpakke-stort.png");
+  background-repeat: no-repeat;
+  background-position: 15% 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.fa-chevron-right_sendguide {
+  width: 70px;
+  height: 70px;
+  background-color: #4195BA;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.fa-chevron-right_guide.send_guide {
+  background-color: #4195BA;
+}
+
+.img_icons_scan_manuel {
+  justify-items: center;
+}
+
+.buttonhent.button__send_step3 {
+  margin-top: 165px;
+  margin-left: 50px;
+  background-color: #4195BA;
+}
+
+.button__send_step3 {
+  margin-right: 50px;
+}
+
+.finger_touch_sendstep3 {
+  margin-left: 230px;
+  margin-bottom: 35px;
+  position: relative;
+  top: -17px;
+}
+
+.buttonguidesend__2 {
+  margin: 0;
+}
+
+.fas.fa-circle.guide.guide--done.blue {
+  margin-left: 50px;
+}
+
+/* ---------- Send Pakke ---------- */
+.introtext_guide__sendpakke {
+  color: #4195BA;
+}
+
+.img__sendpakke-stort {
+  position: fixed;
+  right: -200px;
+  z-index: -1;
+}
+
+.icon-pil-sendpakke {
+  background-color: #4195BA;
+  height: 121px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 48px;
+}
+
+.sendlogind__tekst {
+  font-weight: bold;
+}
+
+.sendlogind-section {
+  text-align: center;
+  margin-top: 240px;
+}
+
+.box__sendpakke {
+  border-radius: 12px;
+  box-shadow: 3px 3px 20px #a2a4a7;
+  width: 330px;
+  height: 120px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.88);
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.chevron-right__sendpakke {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* ---------- Mine Pakker ---------- */
+.img__hentpakke-stort {
+  position: fixed;
+  left: -220px;
+  z-index: -1;
+}
+
+.main__minepakker {
+  margin-top: 50px;
+}
+
+.box__minepakker {
+  border-radius: 12px;
+  box-shadow: 3px 3px 20px #a2a4a7;
+  width: 330px;
+  height: 180px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.88);
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+
+.heading__pakke {
+  padding-left: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.minpakke__adress {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+
+.fa-map-marker-alt {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.afsender {
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.daysleft {
+  margin-top: 0;
+  color: #F02637;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.icon-pil {
+  background-color: #F02637;
+  height: 180px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 48px;
+}
+
+.chevron-right__minepakker {
+  margin-top: 70px;
+  margin-left: 12px;
+  color: #ffffff;
+}
+
+.minepakker__logind {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prologind__tekst {
+  font-weight: bold;
+}
+
+/* ---------- Login Page ----------  */
+.mainlogin {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.logo__login {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 150px;
+}
+
+.button__login {
+  background-color: #66A368;
+  margin: 15px;
+}
+
+.button__opretkonto {
+  align-self: end;
+}
+
+/* ---------- Pop-Up Tilladelser Bluetooth og Lokation ---------- */
+.popup__tilladelser {
+  display: grid;
+  grid-template-rows: 10px 1fr 1fr 0.3fr 1fr 1fr 80px;
+  text-align: center;
+  height: 610px;
+  z-index: 2;
+}
+
+.fa-times {
+  margin: 15px;
+  color: #4195BA;
+  margin-left: 280px;
+}
+
+.tilladelsericons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fa-6x {
+  color: #4195BA;
+  margin-top: 10px;
+  justify-self: end;
+}
+
+.fa-5x {
+  color: #F02637;
+  margin-top: 30px;
+  justify-self: start;
+}
+
+.heading__tilladelser {
+  font-size: 2em;
+  margin-bottom: 70px;
+}
+
+.underheading__tilladelser {
+  margin: 0;
+}
+
+.text__tilladelser {
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.p__tilladelser {
+  margin-top: 0;
+}
+
+/* ---------- Afhent pakke ---------- */
+.hentpakke__lille {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tekst__map {
+  text-decoration: none;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #16273D;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.main__afhentpakke {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 1fr;
+  text-align: center;
+}
+
+.infotext__afhentpakke {
+  font-size: 1.3em;
+  margin-top: 40px;
+}
+
+.button__overdrag {
+  margin-top: 15px;
+  font-size: 1.3em;
+  width: 200px;
+  background-color: #FFA0A8;
+}
+
+.adress__hentpakke {
+  font-size: 1.3em;
+}
+
+/* ---------- Bluetooth searching ---------- */
+.pakkeboks {
+  z-index: -1;
+  margin-top: 50px;
+}
+
+.popup__bluetoothsearch {
+  height: 320px;
+  font-size: 1.4em;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+
+.main__bluetoothsearch {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+
+.loading_bluetooth {
+  max-width: 220px;
+}
+
+/* ---------- Open Box ---------- */
+.main__openbox {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr 0.2fr;
+  text-align: center;
+  justify-items: center;
+  line-height: 30%;
+}
+
+.adress__openbox {
+  font-size: 1em;
+}
+
+.heading__openbox {
+  margin-top: 40px;
+}
+
+.button__openbox {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.text__doordontopen {
+  text-decoration: none;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #16273D;
+  font-weight: bold;
+}
+
+/* ---------- Boxisopen ---------- */
+.main__boxisopen {
+  display: grid;
+  grid-template-rows: 0.2fr 2fr 0.2fr;
+  text-align: center;
+  justify-items: center;
+}
+
+.pakkeboks__open {
+  margin-right: 55px;
+  margin-top: 7px;
+}
+
+.button__boxopen {
+  background-color: #F02637;
+  height: 60px;
+  width: 270px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-style: bold;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.text__boxisopen {
+  color: #F02637;
+  font-size: 2em;
+}
+
+/* ---------- Box dont open ---------- */
+.errorbox {
+  background: rgba(65, 149, 186, 0.4);
+  height: 290px;
+}
+
+.heading__boxdontopen {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.logo__boxdontopen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.illustration__boxdontopen {
+  display: block;
+  margin-top: 270px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Box Remind ---------- */
+.remindclosebox {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  justify-items: center;
+  font-size: 2em;
+}
+
+.animation_takeyourbox {
+  width: 300px;
+  place-self: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  margin-left: -70px;
+}
+
+/* ---------- Popup Closebox ---------- */
+.popUp2 {
+  width: 350px;
+  height: 180px;
+  background: rgba(240, 38, 55, 0.9);
+  border-radius: 20px;
+  font-size: 40px;
+  display: grid;
+  align-items: center;
+  z-index: 2;
+}
+
+.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ---------- Feedback ---------- */
+.rating {
+  width: 180px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  padding: 5px;
+}
+
+.rating__star {
+  font-size: 2.2em;
+  cursor: pointer;
+  color: #4195BA;
+  transition: filter linear 0.3s;
+}
+
+.rating__star:hover {
+  filter: drop-shadow(1px 1px 4px #4195BA);
+}
+
+.ratingbox {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #FFA0A8;
+  height: 400px;
+  place-items: center;
+  overflow: hidden;
+}
+
+.skipbutton {
+  justify-self: end;
+  margin: 40px;
+  font-size: 1.2em;
+  color: #16273D;
+}
+
+.heading__rating {
+  margin-top: 60px;
+}
+
+/* ---------- Thank you for feedback ---------- */
+.thankyou {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 500px;
+  background-color: #FFA0A8;
+}
+
+.logo__thankyou {
+  width: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.heading__thankyou {
+  font-size: 2.5em;
+  color: #F02637;
+}
+
+.button__thankyou {
+  margin-top: 80px;
+}
+
+/* --------- Popup Kontaktservice ----------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.button__kundeservice {
+  background: #a2a4a7;
+  height: 60px;
+  width: 270px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.kundeservice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 12px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  width: 500px;
+  max-width: 330px;
+  height: 170px;
+}
+
+.kundeservice.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.kundeservice-header {
+  padding: 10px 15px;
+}
+
+.kundeservice-header .title {
+  font-weight: normal;
+  font-size: 1.7em;
+  margin-top: 30px;
+}
+
+.kundeservice-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4195BA;
+  position: fixed;
+  top: 0;
+}
+
+.kundeservice-body {
+  padding: 10px 15px;
+}
+
+#overlay, #overlay2 {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: -200px;
+  left: -200px;
+  right: -200px;
+  bottom: -200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.telefonnummer {
+  font-size: 1.8em;
+  font-weight: bold;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
