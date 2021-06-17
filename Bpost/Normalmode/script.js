@@ -7,21 +7,22 @@ if (document.querySelector(".hamburger-menu")!= null) {menuIcon.addEventListener
 
 // Rating Stars inspiration: https://dev.to/leonardoschmittk/how-to-make-a-star-rating-with-js-36d3*/
 
-const ratingStars = [...document.getElementsByClassName("rating__star")];
-const ratingResult = document.querySelector(".rating__result");
+const ratingStars = [...document.getElementsByClassName("rating__star")]; //variabel
+const ratingResult = document.querySelector(".rating__result");           //variabel
 
 printRatingResult(ratingResult);
 
 function executeRating(stars, result) {
-   const starClassActive = "rating__star fas fa-star";
-   const starClassUnactive = "rating__star far fa-star";
-   const starsLength = stars.length;
-   let i;
+   const starClassActive = "rating__star fas fa-star"; //variabel
+   const starClassUnactive = "rating__star far fa-star"; //variabel
+   const starsLength = stars.length; //variabel
+   let i; //variabel 
    stars.map((star) => {
-      star.onclick = () => {
+      star.onclick = () => {                               //clickevent
          i = stars.indexOf(star);
 
-         if (star.className.indexOf(starClassUnactive) !== -1) {
+
+         if (star.className.indexOf(starClassUnactive) !== -1) {                    //decision
             printRatingResult(result, i + 1);
             for (i; i >= 0; --i) stars[i].className = starClassActive;
          } else {
@@ -40,7 +41,8 @@ executeRating(ratingStars, ratingResult);
 
 // PopUp Contact Service  ... inspiration: https://www.youtube.com/watch?v=MBaw_6cPmAw
 
-const openKundeserviceButtons = document.querySelectorAll('[data-kundeservice-target]')
+
+const openKundeserviceButtons = document.querySelectorAll('[data-kundeservice-target]')        // Dom Metoden
 const closeKundeserviceButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
@@ -50,7 +52,8 @@ openKundeserviceButtons.forEach(button => {
         openKundeservice(kundeservice)
     })
 })
-if(document.querySelector("[data-kundeservice-target]") !== null) {overlay.addEventListener('click' , () => {
+
+if(document.querySelector("[data-kundeservice-target]") !== null) {overlay.addEventListener('click' , () => {            // If statement
    const kundeservice = document.queryselectorAll('.kundeservice.active')
    kundeservice.forEach(kundeservice => {
        closeKundeservice(kundeservice)
@@ -58,25 +61,27 @@ if(document.querySelector("[data-kundeservice-target]") !== null) {overlay.addEv
 })
 
 closeKundeserviceButtons.forEach(button => {
-   button.addEventListener('click', () => {
+   button.addEventListener('click', () => {                          //clickevent
        const kundeservice = button.closest('.kundeservice')
        closeKundeservice(kundeservice)
    })
 })
 
-function openKundeservice(kundeservice) {
+
+function openKundeservice(kundeservice) {            // If statement & datatype null
    if (kundeservice == null) return
    kundeservice.classList.add('active')
    overlay.classList.add('active')
 }
 
-function closeKundeservice(kundeservice) {
+
+function closeKundeservice(kundeservice) {         // If statement & datatype null
    if (kundeservice == null) return
    kundeservice.classList.remove('active')
    overlay.classList.remove('active')
 }
 
-overlay.addEventListener('click' , () => {
+overlay.addEventListener('click' , () => {          // click event
    const kundeservice = document.queryselectorAll('.kundeservice.active')
    kundeservice.forEach(kundeservice => {
        closeKundeservice(kundeservice)
@@ -84,7 +89,7 @@ overlay.addEventListener('click' , () => {
 })
 
 closeKundeserviceButtons.forEach(button => {
-   button.addEventListener('click', () => {
+   button.addEventListener('click', () => {                  //clickevent
        const kundeservice = button.closest('.kundeservice')
        closeKundeservice(kundeservice)
    })
@@ -94,12 +99,12 @@ closeKundeserviceButtons.forEach(button => {
 
 // PopUp door ist not closed
 
-if(document.querySelector(".popUp2") !== null) {
+if(document.querySelector(".popUp2") !== null) {                     // Dom metoden & datatype null
    const popUp2 = document.querySelector(".popUp2");
    const overlay2 = document.querySelector(".overlay");
 
    function removeHide(){
-       if(popUp2.classList.contains("hide")){
+       if(popUp2.classList.contains("hide")){                      // if statement
          popUp2.classList.remove("hide");
          overlay2.classList.add("active");
       }
@@ -124,18 +129,18 @@ if(document.querySelector(".popUp2") !== null) {
 
 // PopUp blueetoth 
 
-if(document.querySelector(".popUp") !== null){
+if(document.querySelector(".popUp") !== null){             //Dom metoden & datatype null
 const popUp = document.querySelector(".popUp");
 const btn = document.querySelector(".hidePopUp");
 
 function hidePopUp(){
-   if(!popUp.classList.contains("hide")){
+   if(!popUp.classList.contains("hide")){                //if event
        popUp.classList.add("hide")
    }
 }
 
 function showPopUp(){
-   if(!popUp.classList.contains("hide")){
+   if(!popUp.classList.contains("hide")){                //if event
        popUp.classList.remove("hide")
    }
 }
